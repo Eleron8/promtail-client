@@ -2,13 +2,14 @@ package promtail
 
 import (
 	"fmt"
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes/timestamp"
-	"github.com/golang/snappy"
-	"github.com/afiskon/promtail-client/logproto"
 	"log"
 	"sync"
 	"time"
+
+	"github.com/Eleron8/promtail-client/logproto"
+	"github.com/golang/protobuf/proto"
+	"github.com/golang/protobuf/ptypes/timestamp"
+	"github.com/golang/snappy"
 )
 
 type protoLogEntry struct {
